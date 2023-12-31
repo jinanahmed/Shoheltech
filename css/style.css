@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol{
+    list-style-type: none;
+}
+
+
+.navbar{
+    padding-top: 40px;
+}
+.nav-item{
+    margin-left: 45px;
+    position: relative;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.nav-item::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    transition: all linear 0.1s;
+}
+.nav-item:hover::before{
+    width: 100%;
+}
